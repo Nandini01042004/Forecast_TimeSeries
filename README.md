@@ -1,4 +1,4 @@
-# Hackathon '25  
+ 
 ## Time-Series Forecasting Using REST API  
 
 ### Overview  
@@ -58,6 +58,18 @@ Time-series forecasting plays a vital role in domains such as finance, weather, 
 - **Libraries**: `pandas`, `numpy`, `matplotlib`, `seaborn`, `statsmodels`, `scikit-learn`, `Streamlit`  
 
 ---
+
+## 👩‍💻 My Contribution
+
+This project was built by a team of two, with the modules divided equally. I was responsible for the **modeling, forecasting and application layer**:
+
+- **Model training (`modelTraining.py`):** Built an ARIMA model with exogenous variables (open, high, low, volume). Split the data 80/20 and applied ADF stationarity tests with differencing. Evaluated the model using MAE, RMSE and MAPE and plotted actual vs. forecasted values.
+- **Forecasting (`forecasting.py`):** Generated 5-business-day forecasts with confidence intervals, using simulated data for quick demonstration and testing.
+- **Interactive app (`app.py`):** Developed the Streamlit interface where users can fetch API data, upload custom datasets, run EDA, tune ARIMA parameters and view forecasts and metrics and exploratory data analysis.
+
+My teammate handled the **data pipeline**: API data retrieval, cleaning and feature engineering
+
+**Skills applied:** Python, ARIMA, time-series forecasting, statistical testing, Streamlit
 
 ### How to Run the Project  
 1. **Clone the repository**:  
